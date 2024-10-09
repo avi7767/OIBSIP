@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background: #f0f8ff;
+}
+
+.outer {
+    background: linear-gradient(90deg, rgba(0, 150, 136, 1) 0%, rgba(255, 235, 59, 1) 100%);
+    border-radius: 20px;
+    margin: 50px 80px 30px 80px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 52px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.caption h4 {
+    font-family: consolas, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.thumbnail {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail img {
+    border-radius: 10%;
+    border: 4px solid #fff;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium';
+    color: #003300;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    color: #333;
+}
+
+ul li {
+    padding: 5px 0;
+    color: #444;
+}
+
+h3 {
+    margin: 7px 0;
+}
+
+.footer {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.footer p {
+    font-family: verdana;
+    font-size: 14px;
+    border-top: 1px #d8d8d8 solid;
+    text-align: center;
+    color: #003300;
+}
+
+.footer a {
+    margin: 10px;
+}
+
+.footer a:hover {
+    color: #00b300;
+}
+
+@media screen and (max-width: 639px) {
+    .outer {
+        margin: 6px;
+    }
+
+    .thumbnail img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .footer {
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+
+    .header h1 {
+        font-size: 42px;
+    }
+}

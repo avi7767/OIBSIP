@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <!-- Add CSS  -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!-- main container -->
+    <div class="container">
+        <div class="calculator-body">
+            <!-- input-box -->
+            <div class="cal">
+                <input type="text" class="calculator-screen" id="screen" readonly />
+            </div>
+
+            <!-- Calculator rows -->
+            <div class="calc-button-row">
+                <div class="button c" onclick="clearScreen()">AC</div>
+                <div class="button c" onclick="deleteLast()">C</div>
+                <div class="button c" onclick="appendValue('%')">%</div>
+                <div class="button c" onclick="squareRoot()">√</div>
+                <div class="button c" onclick="appendValue('^')">^</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button l" onclick="appendValue('7')">7</div>
+                <div class="button l" onclick="appendValue('8')">8</div>
+                <div class="button l" onclick="appendValue('9')">9</div>
+                <div class="button c" onclick="appendValue('(')">(</div>
+                <div class="button c" onclick="appendValue(')')">)</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button l" onclick="appendValue('4')">4</div>
+                <div class="button l" onclick="appendValue('5')">5</div>
+                <div class="button l" onclick="appendValue('6')">6</div>
+                <div class="button c" onclick="appendValue('*')">*</div>
+                <div class="button c" onclick="appendValue('/')">÷</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button l" onclick="appendValue('1')">1</div>
+                <div class="button l" onclick="appendValue('2')">2</div>
+                <div class="button l" onclick="appendValue('3')">3</div>
+                <div class="button c" onclick="appendValue('+')">+</div>
+                <div class="button c" onclick="appendValue('-')">-</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button l" onclick="appendValue('0')">0</div>
+                <div class="button l" onclick="appendValue('00')">00</div>
+                <div class="button l" onclick="toggleSign()">+/-</div>
+                <div class="button c" onclick="appendValue('.')">.</div>
+                <div class="button c" onclick="calculateResult()">=</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add JavaScript  -->
+    <script src="script.js"></script>
+</body>
+
+</html>

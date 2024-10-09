@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 400px;
+    background: #2c3e50;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.todo-app h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #27ae60;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #219150;
+    transform: translateY(-1px);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 20px 0;
+}
+
+ul li {
+    background-color: #34495e;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+ul li .btn-container {
+    display: flex;
+}
+
+ul li button {
+    background: #2980b9;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+ul li button:hover {
+    background: #1f6397;
+}
+
+ul li span {
+    background: #e74c3c;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+ul li span:hover {
+    background: #c0392b;
+}
+
+@media (max-width: 400px) {
+    .todo-app {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    ul li {
+        padding: 8px;
+    }
+}
